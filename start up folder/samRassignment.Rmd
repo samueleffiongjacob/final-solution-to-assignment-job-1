@@ -1,0 +1,49 @@
+---
+title: "R Assignment"
+author: "vinci"
+date: "8/30/2021"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Q12
+```{r}
+rm(list = ls())
+```
+
+
+```{r cars}
+rm(list = ls())
+plkt <- read.csv("plankton.csv")
+attach(plkt)
+group <- paste(month,year)
+avg <- tapply(Water.Temp, group, mean)
+df <- data.frame("Average temp" = avg,"Month" = as.numeric(substring(names(avg),1,2)),"Year" = as.numeric(substring(names(avg),3)),row.names = NULL)
+df
+```
+### Water temperature is 12 deg
+H0 -> mu = 12 (the water temperature is 12 degree)
+H1 -> mu != 12 (the water temperature is not 12 degree)
+```{r pressure, echo=TRUE}
+t.test(x = Water.Temp,alternative = "two.sided",mu = 12,conf.level = .99)
+```
+From the obtained P-value there is no enough statistical evidence to reject H0 which state that the Water temperature is 12 degrees
+
+Since at 99% level of confidence the estimated mean of the water temperature is between 11.8 and 12.6 12.5 should be at the extreme of the sampling distribution of the mean, So if 12.5 should be moved to the middle of the distribution which will distort the confidence interval making the mean value 12.17 far off to the left of the sampling distribution, Therefore when a using type I error criteria of 95% we'll obtain a low p-value making it easier to reject the null hypothesis which will come to a conclusion of the water temperature not being 12.5
+
+### water temperature afected period
+
+H0 -> mu1 == mu2 (Water temperature of 1st half period is equal to water temperature of the 2nd half period)
+H1 -> mu1 != mu2 (Water temperature of 1st half period is not equal to water temperature of the 2nd half period)
+
+```{r}
+t.test(Water.Temp ~ period,alternative = "two.sided",conf.level = .99)
+```
+From the above analysis its clear that there is no difference between the water temperature in both the 1st  and 2nd half of the year, so we conclude that the water temperature is not affected by the period
+
+### Q14 
+
+Our  work  is  not  done  once  we  have  found  a  statistically  significant  difference  between the group means. When we calculate MSb, and end up with an average difference between the group means. Since we are comparing four group means, we might find a relatively large average difference between these group means even if two of the four group means are identical. Therefore,  a statistically  significant  F  value  tells  us  only  that  somewhere  there  is  a meaningful difference between the group means. But it does not tell us which groups differ from each other significantly.

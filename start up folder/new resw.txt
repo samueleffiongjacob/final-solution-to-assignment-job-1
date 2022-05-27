@@ -1,0 +1,120 @@
+Analysics and visual representation of plankton in water where shellfish are farmed
+DATASET contain from 
+plankton.csv
+
+how to start a cousrework for analyse international starndard
+
+requirement for handling a cousrework international stardard
+
+stard to finish step  by of handling course work.
+
+start to finish of Analyse and visualise a dataset related to plankton in water 
+where shellfish are farmed ,using a dataset which contain 
+the monitoring of plankton cells pseudonitzschia
+(measure in hundred of cells per litre,) alexandrim
+(measured in cell per litre) and little known robgordia
+(measured in cell per litre).
+
+
+TASKS.
+
+1. Use univariate statistics to analyse the plankton dataset. // do not use any plots.
+
+2. Use a boxplot to show the distribution of Pseudonitzschia and a second one to show the distributionof water temperature.
+/// coment on the plots.
+
+3.Use Univariate statistics to compare data for Pseudonitzschia in the year 2021 with its data in previous years ( consider
+all previous years together)./// comment on the results. do not use plots.
+
+4) Produce two histograms: one showing an attribute with a skewed distribution and one showing an attribute with a normal
+distribution./// comment on the plots.////difference between skewed distribution and normal distribution in R
+
+5. Produce a bar plot for Species.comment on the plot.
+
+6. produce a pie chart for an attribute of your choice. comment on the plot.
+
+7. use a plot to show values of Robgordia.SP AGAINST values of Pseudonitzschia .A.SP where the species is eitHer common mussels
+or pacific oysters. Use colour to show the species.comment on the plot.
+
+8. Use a plot to show Alexandrium.Sp in different region by farming species. Use jitter if needed. comment on the plot.
+
+liner(https://www.google.com/search?q=how+to+produce+a+regression+model+of+two+data+in+r&oq=how+to+produce+a+regression+model+of+two+data+in+r&aqs=chrome..69i57j33i160.35590j0j7&sourceid=chrome&ie=UTF-8#kpvalbx=_1zg1YvCVK42dlwTi86rACQ33)
+
+9. find a pair of plankton speces which are correlated and a pair which are not correlated. Do not use plots correlated.
+/// justify your answers
+
+10. Produce a line plot Which shows the water temperature (y axis) against the sample index (x axis), for samples of common
+cockles and pacific oyster. Both lines (one per species) should be shown in the same plot.
+
+11. produce a linear regression model of Pseudonsitzshia.A.SP for a value of Robgordia.sp of 1000,2500,and 4000 cells per 
+litre. justify the appropriateness of the model and comment on any concerns you may have about your predictions.
+can use this model to predict the values of Rogbodia?
+
+12. Create a dat frame with three columns: month,year,and the mean of the water temperatures observed in the plankton
+dataset during that month-year period.check whether the mean temperature is 12 degrees at 99% confidence. without 
+conducting another test, can you say whether the mean temperature is 12.5% at 95% confidence?
+
+13. You suspect that the water temperature is affected by the period of the year. use plankton dataset to produce a test
+to check this suspicion,clearly highlighting the Null hypothesis and the alternative hypothesis and justifying whether the
+suspicion is supported by the data or not. Justify your answer.f
+
+14. NO CODE NEEDED FOR THIS TASK. YOU think that an ANOVA test may be useful to determine whether different species are 
+farmed in different water temperatures. comment on any concerns that you may have if applying this test to the plankton 
+dataset.
+
+15. Using the plankton dataset( or one derived from it), select some data that has not been visualised already, and produce
+TWO alternative plots of that data which you have not presented earlier. one of the plots should be very informative and 
+effective while the other one should have deliberate deficiencies.compare and contrast the 2 plots, clearly highlighting
+their merits and drawbacks
+
+SIDE HUSTLE.
+PASSWORD: KA.6nLwSnQTrRg8 
+samueleffiong685@gmail.com
+
+installation complete
+package ‘pander’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\Samuel Effiong\AppData\Local\Temp\RtmpGAGbNc\downloaded_packages
+
+
+
+SAMUEL EFFIONG <samueleffiongjacob@gmail.com>
+Mar 12, 2022, 10:04 PM (13 hours ago)
+to me, samueleffiong685, samuel.m1804892
+
+https://www.rdocumentation.org/packages/Publish/versions/2020.12.23/topics/univariateTable
+
+
+https://beta.rstudioconnect.com/content/3350/dplyr_tutorial.html
+
+
+https://cran.r-project.org/web/packages/compareGroups/vignettes/compareGroups_vignette.html
+
+
+https://r4epis.netlify.app/training/walk-through/knitting/
+
+
+https://rkabacoff.github.io/datavis/Univariate.html
+
+https://stats.stackexchange.com/questions/142259/how-to-determine-skewness-from-histogram-with-outliers
+
+
+https://data-flair.training/blogs/normal-distribution-in-r/
+
+
+
+REFRENCES:Stack Overflow:https://stackoverflow.com/questions/64992231/two-ggplot-with-subset-in-pipe
+
+DATA VISUALIZATION WITH R:https://rkabacoff.github.io/datavis/Univariate.html
+
+Univariate and bivariate descriptive analysis:https://beta.rstudioconnect.com/content/3350/dplyr_tutorial.html
+
+BY:Gert Janssenswillen
+
+DATA VISUALIZATION:https://rstudio-pubs-static.s3.amazonaws.com/294957_a9f61a4e682743daa04390484e6e5a7b.html#bar_plots
+
+*
+
+
+sj
